@@ -1,0 +1,86 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+$fa-font-path: "../webfonts";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
+
+*:focus {
+    outline: none!important;
+}
+
+.content {
+    padding-top: 10px;
+    background: #f8f9fa!important;
+    padding-bottom: 300px;
+    text-align: left!important;
+}
+
+.menu-header, .modal-custom-header {
+  background: #04a7bb;
+  color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    margin-top: 75px;
+  }
+}
+
+.card-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1200px) {
+  .card-btns {
+    display: block !important;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.navbar-laravel {
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
+}
+
+.breadcrumbs {
+    background-color: #eee;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    margin: 0 auto;
+  }
+  
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  ul.breadcrumb li a {
+    color: #353535;
+    text-decoration: none;
+  }
+
+  ul.breadcrumb li a.active {
+      color: #000;
+      font-weight: bold;
+  }
+  
+  ul.breadcrumb li a:hover {
+    text-decoration: underline;
+  }

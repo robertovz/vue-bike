@@ -1,0 +1,90 @@
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$white: #fff;
+$black: #000;
+$blue: #3490dc;
+$lightblue: #04a7bb;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$lightgrey: #ebeaea;
+
+
+.white {
+    color: $white;
+}
+.black {
+    color: $black;
+}
+.blue { 
+    color: $blue;
+}
+.lightblue { 
+    color: $lightblue;
+}
+.indigo { 
+    color: $indigo;
+}
+.purple  { 
+    color: $purple ;
+}
+.pink   { 
+    color: $pink  ;
+}
+.red { 
+    color: $red;
+}
+.orange  { 
+    color: $orange ;
+}
+.yellow { 
+    color: $yellow;
+}
+.green { 
+    color: $green;
+}
+.teal { 
+    color: $teal ;
+}
+.cyan { 
+    color: $cyan;
+}
+.card {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+.bcustom-primary {
+    color: $white!important;
+    background: #17a2b8!important;
+    border: 1px solid #17a2b8!important;
+    border-radius: 0px!important;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    .icon {
+        font-size: 17px;
+    }
+}
+.bcustom-secondary {
+    color: $black!important;
+    background: $lightgrey!important;
+    border: 1px solid $lightgrey!important;
+    border-radius: 0px!important;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    .icon {
+        font-size: 17px;
+    }
+}
+.bcustom-secondary:hover {
+    color: #fff!important;
+    background: grey!important;
+}
