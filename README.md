@@ -1,4 +1,4 @@
-# start-app
+# vue-bike
 
 > A Vue.js project
 
