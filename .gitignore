@@ -10,13 +10,6 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
-=======
-/test/unit/coverage/
-/test/e2e/reports/
-selenium-debug.log
-build/
->>>>>>> b2c0ecc6f672fed2eaa65b9bb29e9356975cbc20
 
 # Editor directories and files
 .idea
