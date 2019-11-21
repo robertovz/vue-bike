@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Products from "@/components/Products/ProductList/ProductList"
 import Details from "@/components/Products/Details";
-import Cart from "@/components/Cart/CheckOut";
+import Cart from "@/components/Cart/Checkout";
 import About from "@/components/About";
 import notFound from "@/components/NotFound";
 Vue.use(Router)
