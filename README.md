@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# start-app3
-=======
+
 # vue-bike
->>>>>>> b2c0ecc6f672fed2eaa65b9bb29e9356975cbc20
 
 ## Project setup
 ```
