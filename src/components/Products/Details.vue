@@ -181,11 +181,6 @@
                           <p>{{ comment.description }}</p>
                         </div>
                       </header>
-                      <div class="text-right">
-                        <a href="#">
-                          <i class="fa fa-trash red"></i>
-                        </a>
-                      </div>
                       <p class="text-right">
                         <a href="#" class="btn btn-default btn-sm">
                           <i class="fa fa-reply"></i> reply
@@ -198,10 +193,10 @@
             </div>
             <button
               type="button"
-              class="btn btn-primary"
+              class="btn btn-primary mt-3"
               data-toggle="modal"
               data-target="#allComments"
-              v-if="totalUser > 0"
+              v-if="product.review.length > 0"
             >View all comments</button>
 
             <div
@@ -228,8 +223,8 @@
                   <div class="my-5">
                     <div
                       class="orange font-weight-bold text-left page-header py-2 px-5"
-                    >Customer Reviews ({{ totalUser }})</div>
-                    <div class="row mt-2 mx-5">
+                    >Customer Reviews ({{ product.review.length }})</div>
+                    <div class="row mt-2 mx-5" v-for="comment in product.review" :key="comment.id">
                       <div class="col-lg-1 col-md-2 col-sm-2 hidden-xs">
                         <div class="thumbnail">
                           <div class="image">
@@ -240,7 +235,7 @@
                               style="width: 55px"
                             />
                           </div>
-                          <div class="text-center">{{ comment.user_name }}</div>
+                          <div class="text-center">{{ comment.author }}</div>
                         </div>
                       </div>
                       <div class="col-lg-11 col-md-10 col-sm-10">
@@ -252,26 +247,18 @@
                               </div>
                               <div class="comment-user ml-2">
                                 <star-rating
+                                  v-model="comment.rating"
                                   :increment="0.5"
                                   text-class="custom-text"
                                   :read-only="true"
                                   :star-size="25"
                                 />
                               </div>
-                              <div class="font-weight-bold ml-2">{{ }}</div>
+                              <div class="font-weight-bold ml-2">{{ comment.datePublished }}</div>
                               <div class="comment-post ml-1">
-                                <p>{{ }}</p>
+                                <p>{{ comment.description }}</p>
                               </div>
                             </header>
-                            <div class="text-right">
-                              <button
-                                type="button"
-                                class="btn btn-danger"
-                                @click="deleteReview(comment.id)"
-                              >
-                                <i class="fa fa-trash"></i>
-                              </button>
-                            </div>
                             <p class="text-right">
                               <a href="#" class="btn btn-default btn-sm">
                                 <i class="fa fa-reply"></i> reply

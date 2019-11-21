@@ -359,15 +359,6 @@ export default {
       },
     };
   },
-  methods: {
-    getCategory(event) {
-    },
-    loadNewProducts() {
-    }
-  },
-  created() {
-    this.loadNewProducts();
-  }
 };
 </script>
 

@@ -5,8 +5,8 @@ import App from './App'
 import router from './router'
 import data from './data.js'
 import store from './store.js'
-import 'popper.js'
 import 'bootstrap'
+import 'popper.js'
 import './assets/app.scss'
 
 import jQuery from 'jquery';
@@ -26,7 +26,7 @@ Vue.component('star-rating', StarRating);
 
 window.Fire = new Vue();
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({

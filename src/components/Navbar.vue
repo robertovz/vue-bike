@@ -603,7 +603,7 @@ export default {
 }
 .search-box-2,
 .cart-box-2 {
-  display: none;
+  display: none!important;
 }
 .cart-box .btn {
   border: none !important;
@@ -628,7 +628,7 @@ export default {
   }
   .search-box-2,
   .cart-box-2 {
-    display: block;
+    display: block!important;
   }
   .form-control.search {
     width: 70%;
